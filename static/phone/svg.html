@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change the color of three parts of triangle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    
+
+    <h2>Paint your petal</h2>
+    <div class="card">
+      
+      <!-- setting up the colorpicker squares that ppl will use to paint the svg file-->
+      <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#f0907c"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#fac5bc"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#FFD7BA"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#F3C053"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#E7EDB7"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#a5d7b8"
+      ></div>
+            <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#476b57"
+      ></div>
+
+            <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#A1C349"
+      ></div>
+            <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#F7AEF8"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#70DBFF"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#6966FF"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        class="color-field"
+        style="--color:#0A85ED"
+      ></div>
+
+      
+          </div>  
+
+<!--     <!-- setting up the svg container to make sure it's centered and looks decent-->
+    <br><br>
+    <div class="svg-container"> 
+
+      <svg
+        id="svg-file"
+        xmlns="http://www.w3.org/2000/svg"
+        viewbox="0 0 32.84 28.46"
+      >
+        <defs>
+          <style>
+            .b {
+              fill: "#696969";
+  
+            }
+          </style>
+        </defs>
+        <path
+          class="b"
+          id="path1"
+          d="M16.9,19.25l-.47-.27h-.03l-.48,.29L0,28.46H32.84l-15.94-9.21Z"
+        />
+        <path
+          class="b"
+          id="path2"
+          d="M32.34,27.58l-7.72-13.34L16.9,.87l-.5-.87V18.97h.03l.47,.28,15.94,9.2-.5-.87Z"
+        />
+        <path
+          class="b"
+          id="path3"
+          d="M15.9,.87l-7.7,13.37L.5,27.59l-.5,.87,15.92-9.19,.48-.28V0l-.5,.87Z"
+        />
+      </svg>
+      </div>
+
+    <!--submit button-->
+    <button type="button" class="button" id="submit">submit</button>
+  </body>
+  <script src="main.js"></script>
+</html>

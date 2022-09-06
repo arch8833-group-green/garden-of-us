@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garden of Us [Phone View]</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="w3-container w3-mobile">
+      <header>
+        <h1>Garden of Us</h1>
+      </header>
+
+      <main>
+        <h3>Add Your Flower to the Garden</h3>
+        <!--         <br><br> -->
+        <p>Choose a Petal Below</p>
+
+        <div class="row">
+          <div class="column">
+            <!--triangle petal-->
+            <a href="svg.html">
+              <img
+                src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/small-flower-petal.png?v=1649004447527"
+                alt="small triangle petal"
+              />
+            </a>
+          </div>
+
+          <div class="column">
+            <!--select square design-->
+            <img
+              src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/small-cross.png?v=1649004447492"
+              alt="small cross flower"
+              onclick="warn()"
+            />
+          </div>
+
+          <div class="column">
+            <!--select orchid design-->
+
+            <img
+              src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/small-orchid.png?v=1649004447493"
+              alt="small orchid"
+              onclick="warn()"
+            />
+          </div>
+          <div class="column">
+            <!--select sunflower design-->
+
+            <img
+              src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/small-octagon.png?v=1649004537748"
+              alt="small octagon"
+              onclick="warn()"
+            />
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+    <script>
+      function warn() {
+        alert("Only the first petal type (triangle) is available in this demo, please try selecting that option.");
+      }
+    </script>
+  </body>
+
+  <!--<script src ="./main.js"></script>-->
+</html>

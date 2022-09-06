@@ -1,0 +1,26 @@
+{
+  "name": "garden-of-us",
+  "version": "0.0.0",
+  "description": "A simple express app.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "socket.io": "4.4.1",
+    "chokidar": "^3.5.3"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/matt-express-starter"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
