@@ -11,21 +11,12 @@ const sprite = [
 ];
 const pling = new Howl({
   src: [
-    "https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/pling_combined.mp3?v=1651549759733",
+    "/assets/audio/pling_combined.mp3",
   ],
   html5: true,
   sprite,
 });
 
-// const pling = new Howl({
-//   src: ['https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/pling_combined.mp3?v=1651549759733'],
-//   sprite: {
-//     pling_1: [0, 4562],
-//     pling_2: [4562, 4532],
-//     pling_3: [9087, 4494],
-//     pling_4: [13611, 4601]
-//   }
-// })
 window.pling = pling;
 
 AFRAME.registerSystem("socket-io", {

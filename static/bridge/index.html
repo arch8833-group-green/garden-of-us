@@ -25,7 +25,7 @@
       import "./components/structure-motion.js";
       
       var sound = new Howl({
-        src: ['https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/background%20noise%20with%20textures.mp3?v=1651553249477'],
+        src: ['/assets/audio/background-noise-with-textures.mp3'],
         html5: true,
         autoplay: true,
         loop: true
@@ -45,7 +45,7 @@
     </script>
   </head>
   <body>
-    <!--     <img src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/bridge-display-layout.png?v=1647044376523"
+    <!--     <img src="/assets/image/bridge-display-layout.png"
          style="position:fixed; z-index: 20" /> -->
     <template id="scene-template">
       <a-scene
@@ -57,35 +57,20 @@
         <a-assets>
           <img
             id="pool-layout"
-            src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/pool-layout.png?v=1647044373646"
+            src="/assets/image/pool-layout.png"
             crossorigin="anonymous"
           />
           <a-asset-item
-            src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/triangle-flower.glb?v=1649732512795"
-            id="asset-triangle-flower"
-          ></a-asset-item>
-
-          <a-asset-item
-            src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/triangle-flower-textured.glb?v=1651000476661"
+            src="/assets/model/triangle-flower-textured.glb"
             id="asset-triangle-flower-textured"
           ></a-asset-item>
           <a-asset-item
-            src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/structure-with-placeholders.glb?v=1650405072811"
+            src="/assets/model/structure-with-placeholders.glb"
             id="asset-structure-placeholder"
           >
           </a-asset-item>
           <a-asset-item
-            src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/structure-with-placeholders2.glb?v=1651002655139"
-            id="asset-structure-placeholder2"
-          >
-          </a-asset-item>
-          <a-asset-item
-            src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/structure-with-placeholders3.glb?v=1651543931679"
-            id="asset-structure-placeholder3"
-          >
-          </a-asset-item>
-          <a-asset-item
-            src="https://cdn.glitch.global/232219be-1b20-4e58-b528-540876901157/seaweed-strip-03.glb?v=1651551381401"
+            src="/assets/model/seaweed-strip.glb"
             id="asset-seaweed-strip"
           >
           </a-asset-item>
@@ -105,7 +90,7 @@
             rotation="90 0 0"
             scale="1.5 1.5 1.5"
             inflate-placeholders
-            gltf-model="#asset-structure-placeholder3"
+            gltf-model="#asset-structure-placeholder"
           ></a-entity>
         </a-entity>
 
@@ -125,14 +110,6 @@
             gltf-model="#asset-seaweed-strip"
           ></a-entity>
         </a-entity>
-
-        <a-entity
-          visible="false"
-          rotation="90 0 0"
-          position="0 0 -20"
-          scale="1 1 1"
-          gltf-model="#asset-triangle-flower"
-        ></a-entity>
 
         <!--                 <a-entity
           rotation="90 0 0"
